@@ -461,6 +461,7 @@ other than ASM, which is rewritten to avoid conflicts. -->
                 <attribute name="Main-Class" value="org.jruby.Main"/>
             </manifest>
             <rule pattern="org.objectweb.asm.**" result="org.jruby.org.objectweb.asm.@1"/>
+            <rule pattern="jline.**" result="org.jruby.jline.@1"/>
         </jarjar>
         <antcall target="_osgify-jar_">
             <param name="bndfile" value="jruby.bnd"/>
@@ -490,6 +491,7 @@ other than ASM, which is rewritten to avoid conflicts. -->
                 <attribute name="Main-Class" value="org.jruby.Main"/>
             </manifest>
             <rule pattern="org.objectweb.asm.**" result="org.jruby.org.objectweb.asm.@1"/>
+            <rule pattern="jline.**" result="org.jruby.jline.@1"/>
         </jarjar>
         <antcall target="_osgify-jar_">
             <param name="bndfile" value="jruby.bnd"/>
@@ -615,6 +617,7 @@ other than ASM, which is rewritten to avoid conflicts. -->
                 <attribute name="Main-Class" value="${mainclass}"/>
             </manifest>
             <rule pattern="org.objectweb.asm.**" result="org.jruby.org.objectweb.asm.@1"/>
+            <rule pattern="jline.**" result="org.jruby.jline.@1"/>
         </jarjar>
         <antcall target="_osgify-jar_">
             <param name="bndfile" value="jruby-complete.bnd"/>
